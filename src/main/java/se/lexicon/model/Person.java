@@ -6,6 +6,7 @@ private static int sequencer = 0;
 private final int id;
 private String firstName;
 private String lastName;
+private Book[] borrowed = new Book[2];
 
     public Person(String firstName, String lastName) {
         setFirstName(firstName);
