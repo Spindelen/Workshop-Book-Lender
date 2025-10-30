@@ -58,6 +58,7 @@ public class Book {
 
     public void setOwner(Person owner) {
         this.owner = owner;
+        this.available =(owner == null);
     }
 
     public String getBookInformation() {
