@@ -45,6 +45,25 @@ private Book[] borrowed = new Book[2];
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public Book[] getBorrowed() {
+        return borrowed;
+    }
+
+    public void setBorrowed(Book[] borrowed) {
+        this.borrowed = borrowed;
+    }
+
+    public void loanBook(Book book){
+        if (book.isAvailable()){
+            book.setBorrower(this);
+            Book[] newBorrowed = Arrays.copyOf(borrowed, borrowed.length +1);
+            newBorrowed[newBorrowed.length -1] =book;
+            setBorrowed(newBorrowed);
+        } else{
+            System.out.println("Cannot loan book");
+        }
+    }
     public String getPersonInformation() {
         return "Person Id: " + id + ", Name: " + firstName + " " + lastName;
     }
