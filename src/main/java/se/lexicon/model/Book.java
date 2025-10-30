@@ -12,6 +12,12 @@ public class Book {
         this.author = author;
     }
 
+    public Book(String title, String author, boolean available) {
+        this.title = title;
+        this.author = author;
+        this.available = available;
+    }
+
     public String getId() {
         return id;
     }
