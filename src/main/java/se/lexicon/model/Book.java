@@ -7,7 +7,7 @@ public class Book {
     private String author;
     private boolean available;
     private Person owner;
-    
+
 
     public Book(String title, String author) {
         this.title = title;
@@ -51,6 +51,15 @@ public class Book {
     public void setAvailable(boolean available) {
         this.available = available;
     }
+
+    public Person getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Person owner) {
+        this.owner = owner;
+    }
+
     public String getBookInformation() {
         return "Book Id: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + available;
     }
