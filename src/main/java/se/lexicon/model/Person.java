@@ -8,9 +8,9 @@ private String firstName;
 private String lastName;
 
     public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.id = ++sequencer;
+        setFirstName(firstName);
+        setLastName(lastName);
+        this.id = getSequencer();
     }
 
     public int getSequencer() {
