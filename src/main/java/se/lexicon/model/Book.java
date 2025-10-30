@@ -49,7 +49,7 @@ public class Book {
     public void setAvailable(boolean available) {
         this.available = available;
     }
-    public String getBookInformation(); {
+    public String getBookInformation() {
         return "Book Id: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + available;
     }
 }
