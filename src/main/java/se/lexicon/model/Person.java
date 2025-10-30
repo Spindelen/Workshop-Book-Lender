@@ -13,8 +13,8 @@ private String lastName;
         this.id = getSequencer();
     }
 
-    public int getSequencer() {
-        return sequencer;
+    public static int getSequencer() {
+        return ++sequencer;
     }
 
     public void setSequencer(int sequencer) {
