@@ -43,4 +43,7 @@ private String lastName;
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    public String getPersonInformation() {
+        return "Person Id: " + id + ", Name: " + firstName + " " + lastName;
+    }
 }
