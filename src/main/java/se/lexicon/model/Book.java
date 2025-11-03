@@ -6,18 +6,29 @@ public class Book {
     private String title;
     private String author;
     private boolean available;
-    private Person owner;
+    private Person borrower;
+    private static int seq = 0;
 
 
     public Book(String title, String author) {
-        this.title = title;
-        this.author = author;
+        setTitle(title);
+        setAuthor(author);
+        this.available = true;
+        this.borrower = null;
+        this.id = "book " +(++seq);
     }
 
     public Book(String title, String author, boolean available) {
-        this.title = title;
-        this.author = author;
-        this.available = available;
+        setTitle(title);
+        setAuthor(author);
+        setAvailable(true);
+        /*setBorrower(borrower);*/
+
+    }
+
+   public static int getSeq() {
+        seq++;
+        return seq;
     }
 
     public String getId() {
@@ -52,16 +63,16 @@ public class Book {
         this.available = available;
     }
 
-    public Person getOwner() {
-        return owner;
-    }
+    //public Person getBorrower() {
+      //  return borrower;
+    //}
 
-    public void setOwner(Person owner) {
-        this.owner = owner;
-        this.available =(owner == null);
+    public void setBorrower(Person borrower) {
+        this.borrower = borrower;
+       // this.available =(borrower == null);
     }
 
     public String getBookInformation() {
-        return "Book Id: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + available;
+        return "Id: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + available;
     }
 }
