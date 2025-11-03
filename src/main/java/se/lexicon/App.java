@@ -50,8 +50,8 @@ public class App {
 
         // Display person information after borrowing a book
         info.append(">Display Person information after borrowing a book: <\n\n");
-        info.append(person.getPersonInformation()).append("\nBorrowed book:").append(book.getBookInformation()).append("\n\n");
-        info.append(person1.getPersonInformation()).append("\nBorrowed book:").append(book1.getBookInformation()).append("\n\n");
+        info.append(person.getPersonInformation()).append("\nBorrowed book: ").append(book.getBookInformation()).append("\n\n");
+        info.append(person1.getPersonInformation()).append("\nBorrowed book: ").append(book1.getBookInformation()).append("\n\n");
         // Display book information after borrowing a book
 
         // Return the borrowed book

@@ -26,7 +26,7 @@ public class Book {
 
     }
 
-   public static int getSeq() {
+   /*public static int getSeq() {
         seq++;
         return seq;
     }
@@ -37,7 +37,7 @@ public class Book {
 
     public void setId(String id) {
         this.id = id;
-    }
+    }*/
 
     public String getTitle() {
         return title;
